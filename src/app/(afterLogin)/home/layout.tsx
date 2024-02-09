@@ -1,7 +1,10 @@
-import React from 'react';
+import {ReactNode} from "react";
 
-const HomeLayout = async ({ children }: Promise<Element>) => {
-  return <div>{children}</div>;
-};
-
-export default HomeLayout;
+export default async function HomeLayout({children}: { children: ReactNode }) {
+  return (
+    <div>
+      홈 레이아웃
+      {children}
+    </div>
+  );
+}

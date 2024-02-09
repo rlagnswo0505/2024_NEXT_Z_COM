@@ -1,12 +1,10 @@
-import React from 'react';
+import {ReactNode} from "react";
 
-const layout = ({ children }: any) => {
+export default function AfterLoginLayout({ children }: { children: ReactNode }) {
   return (
     <div>
-      애프터로그인 레이아웃
+      애프터 로그인 레이아웃
       {children}
     </div>
-  );
-};
-
-export default layout;
+  )
+}
